@@ -1,0 +1,23 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de datos temporales o de caché
+*.log
+*.tmp
+
+# Archivos JSON de datos sensibles (opcional, si quieres no subir el saldo del cajero)
+data/cashbox.json
+
+# Archivos de Visual Studio Code
+.vscode/
