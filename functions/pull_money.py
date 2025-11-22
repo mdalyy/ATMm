@@ -10,7 +10,7 @@ def pull_money(tipo):
 
     disponible = sum(int(b)*c for b, c in cashbox[tipo].items())
     if monto > disponible:
-        print("❌ No hay suficiente dinero en el cajero.")
+        print("No hay suficiente dinero en el cajero.")
         return
 
     for billete in sorted(cashbox[tipo].keys(), key=int, reverse=True):

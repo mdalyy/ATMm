@@ -17,7 +17,7 @@ def deposit_money(tipo):
 
         # Validar si el billete existe
         if billete not in cashbox[tipo]:
-            print("❌ Billete no válido. Intente con una denominación existente.")
+            print("Billete no válido. Intente con una denominación existente.")
             continue
 
         try:
@@ -33,7 +33,7 @@ def deposit_money(tipo):
         cashbox[tipo][billete] += cantidad
         save_cashbox(cashbox)
 
-        print(f"✅ Se depositaron {cantidad} billetes de {billete} {tipo}.")
+        print(f"Se depositaron {cantidad} billetes de {billete} {tipo}.")
         print(f"Nuevo total de billetes de {billete}: {cashbox[tipo][billete]}")
 
         # Preguntar si desea continuar
